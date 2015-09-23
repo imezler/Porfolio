@@ -1,3 +1,7 @@
+*{
+	margin: 0;
+	padding: 0;
+}
 body {
 	background-image: url(../img/bg.png);
 	height: 100%;
@@ -6,7 +10,6 @@ body {
 .header{
 	margin: 0 auto;
 	max-width: 1200px;
-	border: solid 1px;
 }
 header{
 	width: 100%;
@@ -78,18 +81,46 @@ nav{
 	width: 250px;
 	float: left;
 	background-color:#eff3f7; 
-	border: solid 1px;
+	border-radius: 3px;
+	
 }
-nav ul li{
+nav ul{
 	list-style: none;
+	line-height: 74px;
+
 }
 nav ul li a{
+	display: block;
+	border-bottom: 2px solid #3ba8c0;
 	text-decoration: none;
+	color: #3ba8c0;
+	padding-left: 28px;
+	font-family: "FiraSansBook";
+	font-size: 22px;
+	
+}
+nav ul li:nth-child(1):hover {
+	background-color: #3ba8c0;
+	border-radius:3px 3px 0 0;
+}
+nav ul li:nth-child(2):hover {
+	background-color: #3ba8c0;
+}
+nav ul li:nth-child(3):hover {
+	background-color: #3ba8c0;
+	border-radius:0 0 3px 3px;
+}
+nav ul li a:hover {
+	color:#ffffff;
+}
+#bord{
+	border-bottom: none;
 }
 article{
 	height: 100%;
 	width: 650px;
 	float: right;
+	background-color:#eff3f7;
 	border: solid 1px;
 }
 section{
