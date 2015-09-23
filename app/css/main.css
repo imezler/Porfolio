@@ -1,3 +1,67 @@
-h1{
-	color:black;
+body {
+	background-image: url(../img/bg.png);
+	height: 100%;
+	
+}
+.header{
+	margin: 0 auto;
+	max-width: 1200px;
+	border: solid 1px;
+}
+header{
+	width: 100%;
+	height: 119px;
+	background-color: #eff3f7;
+	background-image: url(../img/border.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	position: absolute;
+}
+.logo{
+	height: 42px;
+	width:250px;
+	margin-top: 39px;
+	float: left;
+}
+.social {
+	width: 270px;
+	float:right;
+	letter-spacing: 20px;
+	margin-top: 35px;
+}
+.social a {
+	height: 47px;
+	width: 47px;
+	display: inline-block;
+}
+.social a:nth-child(1) {
+	background-image: url(../img/vk.png);
+}
+.social a:nth-child(2) {
+	background-image: url(../img/tw.png);
+}
+.social a:nth-child(3) {
+	background-image: url(../img/facebook.png);
+}
+.social a:nth-child(4) {
+	background-image: url(../img/github.png);
+}
+.social a:nth-child(1):hover {
+	background-image: url(../img/vk.png);
+	background-position: -47px 0;
+}
+.social a:nth-child(2):hover {
+	background-image: url(../img/tw.png);
+	background-position: -47px 0;
+}
+.social a:nth-child(3):hover {
+	background-image: url(../img/facebook.png);
+	background-position: -47px 0;
+}
+.social a:nth-child(4):hover {
+	background-image: url(../img/github.png);
+	background-position: -47px 0;
+}
+.clear{
+	clear: both;
 }
