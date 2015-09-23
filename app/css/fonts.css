@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'FiraSansBook';
+    src: url('../fonts/firasans-book.eot');
+    src: url('../fonts/firasans-book.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/firasans-book.woff') format('woff'),
+         url('../fonts/firasans-book.ttf') format('truetype'),
+         url('../fonts/firasans-book.svg#firasans-book') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'FiraSansLight';
+    src: url('../fonts/firasans-light.eot');
+    src: url('../fonts/firasans-light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/firasans-light.woff') format('woff'),
+         url('../fonts/firasans-light.ttf') format('truetype'),
+         url('../fonts/firasans-light.svg#FontName') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'FiraSansBold';
+    src: url('../fonts/firasans-bold.eot');
+    src: url('../fonts/firasans-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/firasans-bold.woff') format('woff'),
+         url('../fonts/firasans-bold.ttf') format('truetype'),
+         url('../fonts/firasans-bold.svg#FontName') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
