@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="ru-RU"><!-- Браузер сможет более корректно расставлять переносы --> <head>
 	<meta charset="UTF-8">
+	<!-- Просим IE переключиться в последний режим --> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Корректное масштабирование на разных устройствах -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Porfolio</title>
+	<!--SEO -->
+	<meta name="description" content="my porfolio">    
+	<meta name="keywords" content="portfolio,job,resume,CV">    
+	<meta name="author" content="Ilya Metsler">
+	<!-- CSS --> 
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/fonts.css">
-
+	<script src="/js/modernizr.js"></script>
 </head>
 <body>
+	<!--[if lt IE 8]>        
+	<p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>        <![endif]--> 
 	<header>
-		<div class="header">
+		<div class="header clearfix">
 			<div class="logo">
 				<a href="http://www.loftschool.com"><img src="img/logo.png" height="42" width="243" alt="Loftschool"></a>
 			</div>
@@ -20,18 +30,17 @@
 				<a href="http://www.facebook.com/"></a>
 				<a href="http://www.github.com"></a>
 			</div>
-			<div class="clear"></div>
 		</div>
 	</header>
-	<main>
+	<div class="main clearfix">
 		<nav>
 			<ul>
-				<li><a href="">Обо мне</a></li>
-				<li><a href="">Мои работы</a></li>
-				<li><a id ="bord" href="">Связаться со мной</a></li>
+				<li><a href="about me" class="navlist">Обо мне</a></li>
+				<li><a href="my works" class="navlist">Мои работы</a></li>
+				<li><a id ="callme" href="callme" class="navlist">Связаться со мной</a></li>
 			</ul>
 		</nav>
-		<article>
+		<section>
 			<div class="info">
 				<h1>Основная информация</h1>
 				
@@ -50,10 +59,17 @@
 				<div class="pic3"><img src="../img/hat.png" alt="hat"></div><div class="edu1">Высшее "АлтГТУ им.И.И.Ползунова"<p>Сентябрь 2008 - Июнь 2012</p></div>
 				<div class="pic4"><img src="../img/sheet.png" alt="sheet"></div><div class="edu2">Среднее профессиональное "РМТ"<p>Сентябрь 2003 - Июнь 2007</p></div>
 			</div>
-		</article>
+		</section>
 		<div class="clear"></div>
-	</main>
-	
+	</div>
+	<footer class="page-footer">
+		<div class="container clearfix">
+			<div class="lock">
+			<a href="/login.html" class="lock-inner"><img src="img/locker.png" alt="Логин"></a>
+			</div>
+			<div class="copyright">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+		</div>
+	</footer>
 	<script src="bower/jquery/jquery.js"></script>
 	<script src="js/main.js"></script>
 </body>
