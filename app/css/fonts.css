@@ -28,3 +28,12 @@
     font-style: normal;
     font-weight: normal;
 }
+@font-face {
+    font-family: 'FiraSansMeduim';
+    src: url('fonts.css/firasans-medium.eot');
+    src: url('css/firasans-medium.eot?#iefix') format('embedded-opentype'),
+         url('css/firasans-medium.woff') format('woff'),
+         url('css/firasans-medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

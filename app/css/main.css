@@ -82,12 +82,12 @@ header{
 	background-image: url(../img/github.png);
 	background-position: -47px 0;
 }
-.clear{
-	clear: both;
-}
 .main{
+	height: 100%;
 	margin: 0 auto;
 	width: 960px;
+	margin-bottom: 40px;
+	border: solid 1px;
 }
 nav{
 	width: 250px;
@@ -103,7 +103,6 @@ nav ul{
 
 }
 .navlist{
-	
 	display: block;
 	border-bottom: 2px solid #3ba8c0;
 	text-decoration: none;
@@ -136,9 +135,20 @@ section{
 .info{
 	background-color: #eff3f7;
 	margin-bottom: 25px;
-
-
+	border: solid 1px;
 }
+.exp1{
+	
+}
+p.exp{
+	margin:0;
+}
+
+
+
+
+
+
 .image-wrap{
 	float: left;
 	margin-left: 55px;
@@ -155,10 +165,34 @@ section{
 	width: 100%;
 }
 .work-wrap{
-	widows: 400px;
+	width: 400px;
 	float: right;
 }
+ul.worklist{
+	margin:0;
+	padding:0;
+}
+li.workitems{
+	list-style: none;
+}
+.workitems1{
+	font-family: "FiraSansBook";
+	display: inline-block;
+}
+.workitems2{
+	display: inline-block;
+}
+.skills{
+	padding:0;
+	width: 220px;
+	display: inline-block;
+	list-style: none;
+	border: solid 1px;
+}
+.skill-item{
+	display: inline;
 
+}
 
 
 
@@ -171,7 +205,7 @@ section{
 	min-width: 970px;
 }
 .wrapper:after{
-	content: "";
+	content: " ";
 	height: 80px;
 	display: block;
 }
@@ -205,7 +239,7 @@ footer{
 	font-size: 16px;
 	line-height: 2.2;
 	color: #4a545d;
-	text-decoration: none;-
+	text-decoration: none;
 	float:left;
 	background: url("../img/closelock.png") no-repeat;
 }
