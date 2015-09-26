@@ -1,16 +1,23 @@
+html{
+	height: 100%;
+}
 body {
 	background-image: url(../img/bg.png);
 	height: 100%;
+	font:normal 1em 'FiraSansLight';
 }
-h1{
-	max-width: 320px;
+h2{
+	margin: 0;
 	height: 70px;
-	font-family: "FiraSansBook";
+	max-width: 300px;
+	font-family: "FiraSansLight";
 	font-size: 26px;
 	color: #3ba8c0;
 	padding-left: 20px;
-	line-height: 72px;
+	line-height: 70px;
 	border-bottom: 2px solid #3ba8c0;
+	margin-bottom: 24px;
+
 }
 .header{
 	max-width: 1200px;
@@ -23,6 +30,7 @@ header{
 	background-image: url(../img/border.png);
 	background-repeat: no-repeat;
 	background-position: bottom;
+	margin-bottom: 38px;
 }
 .logo{
 	margin-top: 39px;
@@ -30,7 +38,7 @@ header{
 }
 .social {
 	float:right;
-	letter-spacing: 20px;
+	letter-spacing: 19px;
 	margin-top: 35px;
 }
 .clearfix:before,
@@ -78,9 +86,8 @@ header{
 	clear: both;
 }
 .main{
-	margin: 40px auto;
+	margin: 0 auto;
 	width: 960px;
-	border: solid 1px;
 }
 nav{
 	width: 250px;
@@ -93,15 +100,17 @@ nav ul{
 	padding:0;
 	list-style: none;
 	line-height: 74px;
+
 }
 .navlist{
+	
 	display: block;
 	border-bottom: 2px solid #3ba8c0;
 	text-decoration: none;
-	color: #3ba8c0;
+	color: #959aa8;
 	padding-left: 28px;
 	font-family: "FiraSansBook";
-	font-size: 22px;
+	font-size: 21px;
 	
 }
 .navlist:nth-child(1):hover {
@@ -121,36 +130,96 @@ nav ul{
 	border-bottom: none;
 }
 section{
-	height: 100%;
 	width: 650px;
 	float: right;
-	border: solid 1px;
 }
 .info{
 	background-color: #eff3f7;
+	margin-bottom: 25px;
+
+
+}
+.image-wrap{
+	float: left;
+	margin-left: 55px;
+	margin-top: 18px;
+}
+.avatar{
+	width: 142px;
+	height: 142px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 5px solid #3ba8c0;
+}
+.ava{
+	width: 100%;
+}
+.work-wrap{
+	widows: 400px;
+	float: right;
 }
 
 
 
 
+
+
+/*Footer to the bottom*/
+.wrapper{
+	position: relative;
+	min-height: 100%;
+	min-width: 970px;
+}
+.wrapper:after{
+	content: "";
+	height: 80px;
+	display: block;
+}
+.page-footer{
+	min-width: 970px;
+	height: 80px;
+	margin-top: -80px;
+}
+/*Footer*/
 footer{
 	height: 80px;
 	background-color: #eff3f7;
 	background-image: url(../img/border.png);
 	background-repeat: no-repeat;
 	background-position: top;
-	font-family: "FiraSansLight";
+	
 }
 .container{
 	width: 960px;
 	margin: 0 auto;
 	padding-top: 24px;
-	
-}
-.lock{
-	float:left;
 }
 .copyright{
 	text-align: center;
 	margin-top: 8px;
+	font-size: 13px;
 }
+.lock .lock-inner{
+	height: 40px;
+	font-family: "FiraSansBook";
+	font-size: 16px;
+	line-height: 2.2;
+	color: #4a545d;
+	text-decoration: none;-
+	float:left;
+	background: url("../img/closelock.png") no-repeat;
+}
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+
+.lock .lock-inner:hover{
+	text-decoration: underline;
+	background: url("../img/openlock.png");
+}
+
