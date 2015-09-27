@@ -89,32 +89,48 @@ header{
 	margin-bottom: 40px;
 	border: solid 1px;
 }
-nav{
+.side{
 	width: 250px;
 	float: left;
+}
+.menu{
 	background-color:#eff3f7; 
 	border-radius: 3px;
+	margin-bottom: 23px;
+	overflow: hidden;
 }
-nav ul{
+.menulist{
 	margin: 0;
 	padding:0;
 	list-style: none;
 	line-height: 74px;
-
+}
+.menuitems{
+	margin:0 10px;
 }
 .navlist{
 	display: block;
 	border-bottom: 2px solid #3ba8c0;
 	text-decoration: none;
 	color: #959aa8;
-	padding-left: 28px;
+	padding-left: 18px;
 	font-family: "FiraSansBook";
 	font-size: 21px;
-	
 }
-.navlist:nth-child(1):hover {
+.navlist:hover{
+	color: #3ba8c0;
+}
+.active, .active:hover{
+	background: #3ba8c0;
+    color: #ffffff;
+    font-size: 22px;
+    margin:0 -10px;
+    padding-left: 28px;
+
+}
+
+/*.navlist:nth-child(1):hover {
 	background-color: #3ba8c0;
-	
 }
 .navlist:nth-child(2):hover {
 	background-color: #3ba8c0;
@@ -124,10 +140,25 @@ nav ul{
 }
 .navlist:hover {
 	color:#ffffff;
-}
+}*/
 #callme{
 	border-bottom: none;
 }
+
+address.contacts{
+	border-radius: 3px;
+}
+.contacts-head{
+	font-family: "FiraSansBook";
+	font-size: 21px;
+}
+
+.contacts-items{
+	
+}
+
+
+
 section{
 	width: 650px;
 	float: right;
