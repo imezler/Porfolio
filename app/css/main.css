@@ -207,6 +207,7 @@ h2.inf{
 	background-repeat: no-repeat;
 	padding-left: 125px;
 	background-position: 58px 4px;
+
 }
 .list{
 	background-image: url("../img/sheet.png");
@@ -315,7 +316,6 @@ li.workitems{
 .page-footer{
 	min-width: 970px; 
 	height: 80px;
-	margin-top: -80px;
 
 }
 /*Footer*/
