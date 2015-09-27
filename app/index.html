@@ -23,20 +23,22 @@
 <body>
 	<!--[if lt IE 8]>        
 	<p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>        <![endif]--> 
-	<header>
-		<div class="header clearfix">
-			<div class="logo">
-				<a href="http://www.loftschool.com"><img src="img/logo.png" height="42" width="243" alt="Loftschool"></a>
+	
+	<div class="wrapper">
+		<header>
+			<div class="header clearfix">
+				<div class="logo">
+					<a href="http://www.loftschool.com"><img src="img/logo.png" height="42" width="243" alt="Loftschool"></a>
+				</div>
+				<div class="social">
+					<a href="http://www.vk.com/"></a>
+					<a href="http://www.twitter.com/"></a>
+					<a href="http://www.facebook.com/"></a>
+					<a href="http://www.github.com"></a>
+				</div>
 			</div>
-			<div class="social">
-				<a href="http://www.vk.com/"></a>
-				<a href="http://www.twitter.com/"></a>
-				<a href="http://www.facebook.com/"></a>
-				<a href="http://www.github.com"></a>
-			</div>
-		</div>
-	</header>
-	<div class="main clearfix">
+		</header>
+		<div class="main clearfix">
 		<div class="side">
 			<nav class="menu">
 			<ul class="menulist">
@@ -55,13 +57,13 @@
 			<h3 class="contacts-head">Контакты</h3>
 			<ul class="contacts-list">
 				<li class="contacts-list-inner mail">
-					<a href="mailto:imetsler@gmail.com" class="contacts-items">mail</a>
+					<a href="mailto:imetsler@gmail.com" class="contacts-items">imetsler@gmail.com</a>
 				</li>
 				<li class="contacts-list-inner tel">
-					<a href="tel:+79538953930" class="contacts-items">phone</a>
+					<a href="tel:+79538953930" class="contacts-items">+79538953930</a>
 				</li>
 				<li class="contacts-list-inner skype">
-					<a href="skype:metsler999" class="contacts-items">skype</a>
+					<a href="skype:metsler999" class="contacts-items">metsler999</a>
 				</li>
 			</ul>
 		</address>
@@ -76,11 +78,11 @@
 							<img src="img/ava.png" alt="avatar" class="ava">
 						</div>
 					</div>
-					<div class="work-wrap">
+					<div class="work-wrap clearfix">
 						<ul class="worklist">
 							<li class="workitems">
 								<div class="workitems1">Меня зовут:</div>
-								<div class="workitems1">Мецлер Илья Васильевич</div>
+								<div class="workitems2">Мецлер Илья Васильевич</div>
 							</li>
 							<li class="workitems">
 								<div class="workitems1">Мой возраст:</div>
@@ -96,14 +98,14 @@
 							</li>
 							<li class="workitems">
 								<div class="workitems1">Ключевые навыки:</div>
-								<div class="workitems2">
+								<div class="workitems-last">
 									<ul class="skills">
-										<li class="skill-item first">html</li>
-										<li class="skill-item second">css</li>
-										<li class="skill-item third">javascript</li>
-										<li class="skill-item forth">gulp</li>
-										<li class="skill-item fifth">git</li>
-										<li class="skill-item sixth">bower</li>
+										<li class="skill-item">html</li>
+										<li class="skill-item">css</li>
+										<li class="skill-item">javascript</li>
+										<li class="skill-item">gulp</li>
+										<li class="skill-item">git</li>
+										<li class="skill-item">bower</li>
 									</ul>
 								</div>		
 							</li>		
@@ -113,24 +115,31 @@
 			</div>
 
 			<div class="info">
-				<h2>Опыт работы</h2>
-				<div class="exp1">Аналитик информационных систем
-				<p class="exp">Ноябрь 2013 - Июнь 2015</p></div>
-				<div class="exp1">Инженер технической поддержки Parallels
-				<p class="exp">Май 2013 - Ноябрь 2013</p></div>
+				<h2 class="inf">Опыт работы</h2>
+				<div class="microwrap">
+					<div class="exp1">Аналитик информационных систем
+					<p class="exp">Ноябрь 2013 - Июнь 2015</p></div>
+				</div>
+				<div class="microwrap min">
+					<div class="exp1">Инженер технической поддержки Parallels
+					<p class="exp">Май 2013 - Ноябрь 2013</p></div>
+				</div>
 			</div>
 
-			<div class="info last">
-				<h2>Образование</h2>
-				<div class="exp1">Высшее "АлтГТУ им.И.И.Ползунова"
-				<p class="exp">Сентябрь 2008 - Июнь 2012</p></div>
-				<div class="exp1">Среднее профессиональное "РМТ"
-				<p class="exp">Сентябрь 2003 - Июнь 2007</p></div>
+			<div class="info">
+				<h2 class="inf">Образование</h2>
+				<div class="microwrap hat">
+					<div class="exp1">Высшее "АлтГТУ им.И.И.Ползунова"
+					<p class="exp">Сентябрь 2008 - Июнь 2012</p></div>
+				</div>
+				<div class="microwrap list">	
+					<div class="exp1">Среднее профессиональное "РМТ"
+					<p class="exp">Сентябрь 2003 - Июнь 2007</p></div>
+				</div>
 			</div>
 		</section>
+		</div>
 	</div>
-
-
 
 	<footer class="page-footer">
 		<div class="container clearfix">

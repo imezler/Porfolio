@@ -1,39 +1,49 @@
 @font-face {
     font-family: 'FiraSansBook';
-    src: url('../fonts/firasans-book.eot');
-    src: url('../fonts/firasans-book.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/firasans-book.woff') format('woff'),
-         url('../fonts/firasans-book.ttf') format('truetype'),
-         url('../fonts/firasans-book.svg#firasans-book') format('svg');
+    src: url('/fonts/firasans-book.eot');
+    src: url('/fonts/firasans-book.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/firasans-book.woff') format('woff'),
+         url('/fonts/firasans-book.ttf') format('truetype'),
+         url('/fonts/firasans-book.svg#firasans-book') format('svg');
     font-style: normal;
     font-weight: normal;
 }
 @font-face {
     font-family: 'FiraSansLight';
-    src: url('../fonts/firasans-light.eot');
-    src: url('../fonts/firasans-light.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/firasans-light.woff') format('woff'),
-         url('../fonts/firasans-light.ttf') format('truetype'),
-         url('../fonts/firasans-light.svg#FontName') format('svg');
+    src: url('/fonts/firasans-light.eot');
+    src: url('/fonts/firasans-light.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/firasans-light.woff') format('woff'),
+         url('/fonts/firasans-light.ttf') format('truetype'),
+         url('/fonts/firasans-light.svg#FontName') format('svg');
     font-style: normal;
     font-weight: normal;
 }
 @font-face {
     font-family: 'FiraSansBold';
-    src: url('../fonts/firasans-bold.eot');
-    src: url('../fonts/firasans-bold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/firasans-bold.woff') format('woff'),
-         url('../fonts/firasans-bold.ttf') format('truetype'),
-         url('../fonts/firasans-bold.svg#FontName') format('svg');
+    src: url('/fonts/firasans-bold.eot');
+    src: url('/fonts/firasans-bold.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/firasans-bold.woff') format('woff'),
+         url('/fonts/firasans-bold.ttf') format('truetype'),
+         url('/fonts/firasans-bold.svg#FontName') format('svg');
     font-style: normal;
     font-weight: normal;
 }
 @font-face {
-    font-family: 'FiraSansMeduim';
-    src: url('fonts.css/firasans-medium.eot');
-    src: url('css/firasans-medium.eot?#iefix') format('embedded-opentype'),
-         url('css/firasans-medium.woff') format('woff'),
-         url('css/firasans-medium.ttf') format('truetype');
+    font-family: 'FiraSansMedium';
+    src: url('/fonts/firasans-medium.eot');
+    src: url('/fonts/firasans-medium.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/firasans-medium.woff') format('woff'),
+         url('/fonts/firasans-medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'proxima_nova_cond';
+    src: url('/fonts/proximanovacond-semibold-webfont.eot');
+    src: url('/fonts/proximanovacond-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/proximanovacond-semibold-webfont.woff2') format('woff2'),
+         url('/fonts/proximanovacond-semibold-webfont.woff') format('woff'),
+         url('/fonts/proximanovacond-semibold-webfont.ttf') format('truetype'),
+         url('/fonts/proximanovacond-semibold-webfont.svg#proxima_nova_condensedSBd') format('svg');
+    font-weight: normal;
+    font-style: normal;
