@@ -31,11 +31,24 @@ header{
 	background-image: url(../img/border.png);
 	background-repeat: no-repeat;
 	background-position: bottom;
-	margin-bottom: 38px;
+	/*margin-bottom: 38px;*/
+
 }
 .logo{
 	margin-top: 39px;
 	float: left;
+}
+.lang, .lang1{
+	margin-top: 5px;
+	border: solid 1px;
+	width: 40px;
+	height: 30px;
+}
+.lang1{
+	height: 29px;
+}
+.lang:hover, .lang1:hover{
+	color: #3ba8c0;
 }
 .social {
 	float:right;
@@ -161,7 +174,9 @@ header{
 	padding-left: 83px;
 	color: #ffffff;
 }
-
+.contacts-items:hover{
+	text-decoration: underline;
+}
 .mail{
 	background-color: #41b9d4;
 	background-image: url(../img/mail.png);
