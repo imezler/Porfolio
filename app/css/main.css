@@ -331,6 +331,7 @@ li.workitems{
 .page-footer{
 	min-width: 970px; 
 	height: 80px;
+	margin-top: -80px;
 
 }
 /*Footer*/
