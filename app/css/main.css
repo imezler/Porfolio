@@ -49,6 +49,9 @@ header{
 .lang:hover, .lang1:hover{
 	color: #3ba8c0;
 }
+.linking{
+	text-indent: -9999px;
+}
 .social {
 	float:right;
 	letter-spacing: 19px;
@@ -121,7 +124,7 @@ header{
 }
 .navlist{
 	display: block;
-	border-bottom: 2px solid #3ba8c0;
+	border-top: 2px solid #3ba8c0;
 	text-decoration: none;
 	color: #959aa8;
 	padding-left: 18px;
@@ -131,17 +134,18 @@ header{
 .navlist:hover{
 	color: #3ba8c0;
 }
-.active, .active:hover{
+.navlist:active{
 	background: #3ba8c0;
     color: #ffffff;
     font-size: 22px;
     margin:0 -10px;
     padding-left: 28px;
-
+    border-bottom: none;
+    margin-bottom: -2px;
 }
 
 #callme{
-	border-bottom: none;
+	border-top: none;
 }
 
 .contacts{

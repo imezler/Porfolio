@@ -56,6 +56,7 @@ input::-webkit-input-placeholder {
 .ent{
 	margin-top: 34px;
 }
+/*------------------Стилизация состояния кнопки---------------*/
 .enter{
 	display: block;
 	margin: 0 auto;
@@ -68,4 +69,14 @@ input::-webkit-input-placeholder {
 	color: #fff;
 	border:none;
 	box-shadow: 0 4px #3ba8c0;	
+}
+.enter:hover{
+	box-shadow: none;
+}
+.enter:active{
+	box-shadow: 0 -4px #3ba8c0;
+}
+.enter, .enter:active,
+.enter:focus{
+    outline: none;
 }
