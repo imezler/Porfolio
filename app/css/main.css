@@ -6,7 +6,7 @@ body {
 	height: 100%;
 	font:normal 1em 'FiraSansLight';
 }
-h2{
+.inf, .name{
 	margin: 0;
 	height: 70px;
 	width: 319px;
@@ -18,7 +18,6 @@ h2{
 	line-height: 70px;
 	border-bottom: 2px solid #3ba8c0;
 	margin-bottom: 24px;
-
 }
 .header{
 	max-width: 1200px;
@@ -378,11 +377,3 @@ li.workitems{
 
 }
 
-/*-------------------auth page---------------------*/
-
-.window{
-	margin:0 auto;
-	height: 484px;
-	width: 590px;
-	border: solid 1px;
-}
