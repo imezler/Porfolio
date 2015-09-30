@@ -1,0 +1,34 @@
+.container2{
+	margin: 0 5px;
+	padding-bottom: 40px;
+}
+.works_list{
+	font-size: 0;
+	list-style: none;
+	padding: 0;
+	margin:0;
+}
+.works_items{
+	display: inline-block;
+	text-align: center;
+	padding:0 15px;
+	margin-bottom: 44px;
+}
+.works_links{
+	margin-bottom: 10px;
+}
+.works_links_in{
+	text-decoration: none;
+	font-family: "FSLI";
+	font-size: 13px;
+	color: #3ba8c0;
+	
+}
+.sitedesc{
+	max-width: 211px;
+	margin:0;
+	padding-top:16px;
+	font-family: "FiraSansLight";
+	font-size: 15px;
+	color: #4a545d;
+}
