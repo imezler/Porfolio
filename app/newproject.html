@@ -18,37 +18,42 @@
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/newproject.css">
 	<link rel="stylesheet" href="fonts/fonts.css">
 	<script src="bower/modernizer/modernizr.js"></script>
 </head>
 
 <body>
 	<!--[if lt IE 8]>        
-	<p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>        <![endif]--> 
-	<div class="wrapper">
-		<div class="window">
-			<div class="login">
-				<h1 class="log">Авторизируйтесь</h1>
-				<div class="line"></div>
-				<div class="cont">
-					<div class="come">
-						<h2 class="name2">Логин</h2>
-						<input type="text" placeholder="Введите логин" class="inp">
-					</div>
-					<div class="come">
-						<h2 class="name2">Пароль</h2>
-						<input type="text" placeholder="Введите пароль" class="inp">
-					</div>
-					<div class="ent">
-						<button class="enter">Войти</button>
-					</div>
-				</div>	
-			</div>
+	<p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p><![endif]--> 
+
+
+<div class="popupadd">
+	<form action="">
+		<div class="pophead">
+			<h3 class="popheader">Добавление проекта</h3>
+			<div class="line"></div>
 		</div>
-	</div>
+		<div class="popwrap">
+			<div class="poperror">
+				<h2 class="poperr">Ошибка!</h2>
+				<p class="poperr2">Невозможно добавить проект.</p>
+			</div>
+			<label class="poplabel">Название проекта</label>
+			<input type="text" placeholder="Введите название" class="popinp">
+			<label class="poplabel">Картинка проекта</label>
+			<input type="file" placeholder="Загрузите изображение" 	class="popinp">
+			<label class="poplabel">URL проекта</label>
+			<input type="text" placeholder="Добавьте ссылку" class="popinp">
+			<label class="poplabel">Описание</label>
+			<textarea class="poparea">Пара слов о вашем проекте</textarea>
+		</div>
+		<button class="buttonpop">Добавить</button>
+	</form>
+</div>
 
 
-	<footer class="page-footer">
+<footer class="page-footer">
 		<div class="container clearfix">
 			<div class="lock">
 			<a href="/login.html" class="lock-inner">Войти</a>

@@ -1,0 +1,105 @@
+/*-----------Добавление нового проекта---------*/
+.popupadd{
+	width: 362px;
+	display: block;
+	border: solid 1px;
+	margin:0 auto;
+	background: #eff3f7;
+}
+.popwrap{
+	width: 320px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+.pophead{
+	height: 50px;
+	border-radius: 3px;
+	background-color: #48cbe8;
+	background-image: url(../img/close.png);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+	margin-bottom: 27px;
+}
+.popheader{
+	font-family: 'FiraSansBook';
+	font-size: 25px;
+	font-weight: normal;
+	color: #fff;
+	line-height: 50px;
+	margin:0;
+	margin-left: 12px;
+
+}
+.poperror{
+	border: solid 1px #f97e76;
+	border-radius: 3px;
+	background-color: #f2cccd;
+	font-family: "FiraSansBook";
+	color: #f97e76;
+	background-image: url(../img/close2.png);
+	background-repeat: no-repeat;
+	background-position: 98% 10%;
+	padding-left: 9px;
+}
+.poperr{
+	margin:0;
+	font-size: 25px;
+	font-weight: normal;
+}
+.poperr2{
+	margin:0;
+	font-size: 15px;
+	font-weight: normal;
+	padding-bottom: 6px;
+}
+.popinp{
+	display: block;
+	margin: 0 auto;
+	height: 40px;
+	width: 100%;
+	border: solid 1px #48cbe8;
+	border-radius: 3px;
+	box-sizing: border-box;
+	padding-left: 20px;
+	color: #48cbe8;
+}
+.poplabel{
+	font-family: "FiraSansBook";
+	font-size: 17px;
+	color: #959aa8;
+	font-weight: normal;
+}
+.poparea{
+	border-radius: 3px;
+	border: solid 1px #48cbe8;
+	color: #48cbe8;
+	display: block;
+	resize:none;
+	width: 100%;
+	min-height: 111px;
+	box-sizing:border-box;
+}
+.buttonpop{
+	background-color: #48cbe8;
+	border-radius: 7px;
+	font-family: "FiraSansBook";
+	display: block;
+	margin: 0 auto;
+	width: 140px;
+	height: 33px;
+	margin-bottom: 22px;
+	font-size: 19px;
+	color: #fff;
+	border:none;
+	box-shadow: 0 4px #3ba8c0;
+}
+.buttonpop:hover{
+	box-shadow: none;
+}
+.buttonpop:active{
+	box-shadow: 0 -4px #3ba8c0;
+}
+.buttonpop, .buttonpop:active,
+.buttonpop:focus{
+    outline: none;
+}
