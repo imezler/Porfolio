@@ -137,7 +137,7 @@ header{
 .navlist:hover{
 	color: #3ba8c0;
 }
-.navlist:active{
+.navlist.current{
 	background: #3ba8c0;
     color: #ffffff;
     font-size: 22px;
