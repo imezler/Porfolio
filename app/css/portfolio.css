@@ -27,11 +27,13 @@
 	color: #3ba8c0;
 }
 .sitedesc{
-	max-width: 211px;
+	box-sizing:border-box;
+	max-width: 180px;
 	margin:0;
-	padding-top:16px;
+	margin-top:16px;
 	font-family: "FiraSansLight";
 	font-size: 15px;
+	line-height: 20px;
 	color: #4a545d;
 }
 .works_img{
@@ -40,16 +42,21 @@
 	color: #3ba8c0;
 }
 .add{
-	height: 131px;
 	width: 183px;
+	height: 130px;
 	border:dashed 1px;
 	border-radius:3px;
 	color: #3ba8c0;
-	padding-bottom: 6px;
+	background-color: #edf8fc;
+}
+.addhid{
+	visibility: hidden;
 }
 .new{
+	box-sizing:border-box;
 	border: none;
 	display: block;
 	margin:0 auto;
-	margin-top: 35px;
+	margin-top: 30px;
 }
+/*-----------Допилить ховер эффект над проектами----------*/
