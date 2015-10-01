@@ -1,3 +1,6 @@
+.sec{
+	max-width: 185px;
+}
 .container2{
 	margin: 0 5px;
 	padding-bottom: 40px;
@@ -11,7 +14,7 @@
 .works_items{
 	display: inline-block;
 	text-align: center;
-	padding:0 15px;
+	padding:0 14px;
 	margin-bottom: 44px;
 }
 .works_links{
@@ -22,7 +25,6 @@
 	font-family: "FSLI";
 	font-size: 13px;
 	color: #3ba8c0;
-	
 }
 .sitedesc{
 	max-width: 211px;
@@ -31,4 +33,23 @@
 	font-family: "FiraSansLight";
 	font-size: 15px;
 	color: #4a545d;
+}
+.works_img{
+	border: solid 2px;
+	border-radius:3px;
+	color: #3ba8c0;
+}
+.add{
+	height: 131px;
+	width: 183px;
+	border:dashed 1px;
+	border-radius:3px;
+	color: #3ba8c0;
+	padding-bottom: 6px;
+}
+.new{
+	border: none;
+	display: block;
+	margin:0 auto;
+	margin-top: 35px;
 }

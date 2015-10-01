@@ -325,20 +325,8 @@ li.workitems{
 /*Footer to the bottom*/
 
 .wrapper{
-	padding-bottom: 150px;
+	padding-bottom: 120px;
 }
-/*
-.wrapper:after{
-	content: "";
-	height: 80px;
-	display: block;
-}
-.page-footer{
-	min-width: 970px; 
-	height: 80px;
-	margin-top: -80px;
-}
-*/
 /*Footer*/
 .page-footer{
 	height: 80px;
