@@ -11,7 +11,6 @@ body {
 
 .inf, .name{
 	margin: 0;
-	height: 70px;
 	width: 319px;
 	font-family: "FiraSansBook";
 	font-size: 26px;
@@ -159,7 +158,6 @@ header{
 	color: #ffffff;
 	line-height: 40px;
 	display: block;
-
 }
 .contacts-head{
 	font-weight: normal;
@@ -169,15 +167,17 @@ header{
 	padding-left: 21px;
 }
 .contacts-list{
+	width: 250px;
 	margin:0;
 	padding:0;
 	list-style: none;
 }
+.contacts-list-inner{
+	padding-left: 83px;
+}
 .contacts-items{
-	padding-left: 21px;
 	text-decoration: none;
 	font-size: 17px;
-	padding-left: 83px;
 	color: #ffffff;
 }
 .contacts-items:hover{
