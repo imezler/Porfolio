@@ -19,6 +19,8 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="fonts/fonts.css">
 	<link rel="stylesheet" href="css/portfolio.css">
+	<link rel="stylesheet" href="css/feedback.css">
+	<link rel="stylesheet" href="css/login.css">
 	<link rel="stylesheet" href="css/newproject.css">
 	<script src="bower/modernizer/modernizr.js"></script>
 </head>
@@ -52,10 +54,10 @@
 					<a id ="callme" href="index.html" class="navlist active">Обо мне</a>
 				</li>
 				<li class="menuitems">
-					<a href="#" class="navlist current">Мои работы</a>
+					<a href="portfolio.html" class="navlist">Мои работы</a>
 				</li>
 				<li class="menuitems">
-					<a href="feedback.html" class="navlist">Связаться со мной</a>
+					<a href="#" class="navlist current">Связаться со мной</a>
 				</li>
 			</ul>
 		</nav>
@@ -74,57 +76,32 @@
 			</ul>
 		</address>
 		</div>
-		
 		<section>
-			<div class="info">
-				<h2 class="name sec">Мои работы</h2>
-				<div class="container2">
-					<ul class="works_list">
-						<li class="works_items">
-							<div class="works_links">
-							<a href="#" class="works_links_inner"><img src="img/site.png" alt="siteimage1" class="works_img"></a></div>
-							<a href="#" class="works_links_in">site.com</a>
-							<p class="sitedesc">Информация о проекте 1 превью 2 строки...</p>
-						</li>
-						<li class="works_items">
-							<div class="works_links">
-							<a href="#" class="works_links_inner"><img src="img/site.png" height="127" width="181" alt="siteimage2" class="works_img"></a></div>
-							<a href="#" class="works_links_in">site.com</a>
-							<p class="sitedesc">Информация о проекте 2 превью 2 строки...</p>
-						</li>
-						<li class="works_items">
-							<div class="works_links">
-							<a href="#" class="works_links_inner"><img src="img/site.png" alt="siteimage3" class="works_img"></a></div>
-							<a href="#" class="works_links_in">site.com</a>
-							<p class="sitedesc">Информация о проекте 3 превью 2 строки...</p>
-						</li>
-						<li class="works_items">
-							<div class="works_links">
-							<a href="#" class="works_links_inner"><img src="img/site.png" alt="siteimage4" class="works_img"></a></div>
-							<a href="#" class="works_links_in">site.com</a>
-							<p class="sitedesc">Информация о проекте 4 превью 2 строки...</p>
-						</li>
-						<li class="works_items">
-							<div class="works_links">
-							<a href="#" class="works_links_inner"><img src="img/site.png" alt="siteimage4" class="works_img"></a></div>
-							<a href="#" class="works_links_in">site.com</a>
-							<p class="sitedesc">Информация о проекте 5 превью 2 строки...</p>
-						</li>
-						<li class="works_items">
-							<div class="works_links">
-							<a href="#" class="works_links_inner"><img src="img/site.png" alt="siteimage4" class="works_img"></a></div>
-							<a href="#" class="works_links_in">site.com</a>
-							<p class="sitedesc">Информация о проекте 6 превью 2 строки...</p>
-						</li>
-						<li class="works_items">
-							<div class="works_links add">
-							<a href="newproject.html" class="works_links_inner"><img src="img/add_project.png" alt="siteimage4" class="works_img new"></a></div>
-							<a href="#" class="works_links_in addhid">site.com</a>
-							<p class="sitedesc addhid">Описание сайта</p>
-						</li>
-					</ul>
-				</div>
-			</div>
+			<div class="forma">
+				<div class="messheader">
+					<h1 class="messhead">У вас интересный проект? Напишите мне</h1>
+					<div class="messline"></div>
+				</div>	
+				<div class="messcont">
+					<div class="messwrap2">
+						<label class="messname">Имя</label>
+						<input type="text" placeholder="Как к вам обращаться" class="messinp">
+
+						<label class="messname">Email</label>
+						<input type="text" placeholder="Куда мне писать" class="messinp">
+					</div>
+					<label class="messname">Сообщение</label>	
+					<textarea class="message">Кратко в чем суть</textarea>
+					<div class="capcha">
+						<label class="messname">Введите код, указанный на картинке</label>
+						<img src="" alt="capcha">
+					</div>
+					<input type="text" class="code" placeholder="Введите код">
+					<div class="ent">
+						<button type="submit" class="messbutton">Отправить</button>
+						<button type="reset" class="messbutton1">Очистить</button>
+					</div>
+				</div>	
 		</section>
 		</div>
 	</div>
@@ -138,6 +115,7 @@
 		</div>
 	</footer>
 	<script src="bower/jquery/jquery.js"></script>
+	<script src="bower/bPopup/jquery.bpopup.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

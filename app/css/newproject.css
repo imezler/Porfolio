@@ -78,6 +78,7 @@
 	width: 100%;
 	min-height: 111px;
 	box-sizing:border-box;
+	padding-left: 20px;
 }
 .buttonpop{
 	background-color: #48cbe8;

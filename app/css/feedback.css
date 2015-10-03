@@ -1,0 +1,105 @@
+.forma{
+	background: #eff3f7
+}
+.messheader{
+	height: 138px;
+	border-radius: 3px;
+	background-color: #48cbe8;
+	margin-bottom: 50px;
+}
+.messhead{
+	font-family: 'FiraSansBook';
+	font-size: 27px;
+	font-weight: normal;
+	color: #fff;
+	line-height: 135px;
+	margin:0;
+	margin-left: 60px;
+}
+.messline{
+	margin-top: -3px;
+	height: 17px;
+	background-color: #67dffa;
+}
+.messcont{
+	display: block;
+	width: 402px;
+	margin:0 auto;
+}
+.messname{
+	font-family: "FiraSansLight";
+	font-size: 19px;
+	color: #959aa8;
+	font-weight: normal;
+}
+.messwrap2{
+	display: block;
+}
+.messinp, .code{
+	display: block;
+	height: 40px;
+	width: 192px;
+	border: solid 1px #48cbe8;
+	border-radius: 3px;
+	box-sizing: border-box;
+	padding-left: 10px;
+	color: #48cbe8;
+}
+input::-webkit-input-placeholder { 
+	color: #48cbe8; 
+}
+.message{
+	border-radius: 3px;
+	border: solid 1px #48cbe8;
+	color: #48cbe8;
+	display: block;
+	resize:none;
+	width: 100%;
+	min-height: 111px;
+	box-sizing:border-box;
+	padding-left: 10px;
+}
+
+
+
+
+
+
+
+/*Button decoration*/
+.messbutton, .messbutton1{
+	background-color: #48cbe8;
+	border-radius: 7px;
+	font-family: "FiraSansBook";
+	display: block;
+	margin: 0 auto;
+	width: 140px;
+	height: 33px;
+	margin-bottom: 22px;
+	font-size: 19px;
+	color: #fff;
+	border:none;
+	box-shadow: 0 4px #3ba8c0;
+}
+.messbutton1:hover,.messbutton:hover{
+	box-shadow: none;
+}
+.messbutton:active{
+	box-shadow: 0 -4px #3ba8c0;
+}
+.messbutton, .messbutton:active,
+.messbutton:focus{
+    outline: none;
+}
+
+.messbutton1{
+background-color: #849db5;
+box-shadow: 0 4px #687b8f;
+}
+.messbutton1:active{
+	box-shadow: 0 -4px #687b8f;
+}
+.messbutton1, .messbutton1:active,
+.messbutton1:focus{
+    outline: none;
+}
