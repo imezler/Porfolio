@@ -1,10 +1,29 @@
 /*-----------Добавление нового проекта---------*/
+
+.addprojpop{
+	position: fixed;
+	top:0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 98;
+	background-color: rgba(0, 0, 0, 0.7);
+	cursor: pointer;
+	display: none;
+}
+.project{
+	z-index: 100;
+	position: fixed;
+	top:0;
+	display: block;
+	width: 362px;
+	background: #eff3f7;
+	display: none;
+}
 .popupadd{
 	width: 362px;
 	display: block;
-	border: solid 1px;
 	margin:0 auto;
-	background: #eff3f7;
 }
 .popwrap{
 	width: 320px;
@@ -15,12 +34,20 @@
 	height: 50px;
 	border-radius: 3px;
 	background-color: #48cbe8;
-	background-image: url(../img/close.png);
-	background-repeat: no-repeat;
-	background-position: 95% 50%;
 	margin-bottom: 27px;
 }
+.btnclose{
+	display: block;
+	cursor: pointer;
+	margin-top: 10px;
+	float: right;
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/close.png);
+	background-repeat: no-repeat;
+}
 .popheader{
+	float: left;
 	font-family: 'FiraSansBook';
 	font-size: 25px;
 	font-weight: normal;
@@ -31,6 +58,7 @@
 
 }
 .poperror{
+	display: none;
 	border: solid 1px #f97e76;
 	border-radius: 3px;
 	background-color: #f2cccd;
@@ -40,6 +68,7 @@
 	background-repeat: no-repeat;
 	background-position: 98% 10%;
 	padding-left: 9px;
+
 }
 .poperr{
 	margin:0;
@@ -63,6 +92,29 @@
 	padding-left: 20px;
 	color: #48cbe8;
 }
+.imagination{
+	z-index: 2;
+	display: block;
+	position: relative;
+	opacity: 0;
+	cursor: pointer;
+}
+.magic{
+	color: #48cbe8;
+	margin: 0;
+	padding: 0;
+	height: 40px;
+	width: 320px;
+	display: block;
+	position: absolute;
+	border-radius: 3px;
+	box-sizing: border-box;
+	padding-left: 20px;
+	border: 1px solid #48cbe8;
+	background-image: url(../img/imgupload.png);
+	background-repeat: no-repeat;
+	background-position: right;
+}
 .poplabel{
 	font-family: "FiraSansBook";
 	font-size: 17px;
@@ -79,6 +131,7 @@
 	min-height: 111px;
 	box-sizing:border-box;
 	padding-left: 20px;
+	margin-bottom: 20px;
 }
 .buttonpop{
 	background-color: #48cbe8;
@@ -103,4 +156,7 @@
 .buttonpop, .buttonpop:active,
 .buttonpop:focus{
     outline: none;
+}
+*::-webkit-input-placeholder { 
+	color: #48cbe8; 
 }

@@ -83,21 +83,25 @@
 					<div class="messline"></div>
 				</div>	
 				<div class="messcont">
-					<div class="messwrap2">
-						<label class="messname">Имя</label>
+					<div class="messwrap clearfix">
+						<div class="messwrap1"><label class="messname">Имя</label>
 						<input type="text" placeholder="Как к вам обращаться" class="messinp">
+						</div>
 
-						<label class="messname">Email</label>
+						<div class="messwrap2"><label class="messname">Email</label>
 						<input type="text" placeholder="Куда мне писать" class="messinp">
+						</div>
 					</div>
 					<label class="messname">Сообщение</label>	
-					<textarea class="message">Кратко в чем суть</textarea>
-					<div class="capcha">
+					<textarea placeholder="Кратко в чем суть" class="message"></textarea>
+					
+					<div class="capcha clearfix">
 						<label class="messname">Введите код, указанный на картинке</label>
-						<img src="" alt="capcha">
+						<div class="capchahere">Capcha is here</div>
+						<input type="text" class="code" placeholder="Введите код">
 					</div>
-					<input type="text" class="code" placeholder="Введите код">
-					<div class="ent">
+					
+					<div class="messbut clearfix">
 						<button type="submit" class="messbutton">Отправить</button>
 						<button type="reset" class="messbutton1">Очистить</button>
 					</div>

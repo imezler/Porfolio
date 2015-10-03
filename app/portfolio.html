@@ -118,7 +118,7 @@
 						</li>
 						<li class="works_items">
 							<div class="works_links add">
-							<a href="newproject.html" class="works_links_inner"><img src="img/add_project.png" alt="siteimage4" class="works_img new"></a></div>
+							<a href="#" id="innerlink"><img src="img/add_project.png" alt="siteimage4" class="works_img new"></a></div>
 							<a href="#" class="works_links_in addhid">site.com</a>
 							<p class="sitedesc addhid">Описание сайта</p>
 						</li>
@@ -137,6 +137,36 @@
 			<div class="copyright">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
 		</div>
 	</footer>
+
+	<!-- Modal window -->
+	<div class="addprojpop"></div>
+		<div class="popupadd">
+			<form class="project">
+				<div class="pophead clearfix">
+					<a href="portfolio.html" class="btnclose"></a>
+					<h3 class="popheader">Добавление проекта</h3>
+					<div class="line">
+				</div>
+				</div>
+				<div class="popwrap">
+					<div class="poperror">
+						<h2 class="poperr">Ошибка!</h2>
+						<p class="poperr2">Невозможно добавить проект.</p>
+					</div>
+					<label class="poplabel">Название проекта</label>
+					<input type="text" placeholder="Введите название" class="popinp">
+					<label class="poplabel">Картинка проекта</label>
+					<input type="text" class="magic" placeholder="Загрузите картинку">
+					<input name="popinp" type="file" placeholder="Загрузите изображение" class="popinp imagination">
+					<label class="poplabel">URL проекта</label>
+					<input type="text" placeholder="Добавьте ссылку" class="popinp">
+					<label class="poplabel">Описание</label>
+					<textarea placeholder="Пара слов о вашем проекте" class="poparea"></textarea>
+					<button class="buttonpop">Добавить</button>
+				</div>
+			</form>
+		</div>
+	
 	<script src="bower/jquery/jquery.js"></script>
 	<script src="js/main.js"></script>
 </body>

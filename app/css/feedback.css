@@ -32,20 +32,35 @@
 	color: #959aa8;
 	font-weight: normal;
 }
-.messwrap2{
+.messwrap{
 	display: block;
+	margin-bottom: 18px;
+}
+.messwrap1{
+	float: left;
+}
+.messwrap2{
+	float: right;
+}
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
 }
 .messinp, .code{
 	display: block;
 	height: 40px;
-	width: 192px;
+	width: 191px;
 	border: solid 1px #48cbe8;
 	border-radius: 3px;
 	box-sizing: border-box;
 	padding-left: 10px;
 	color: #48cbe8;
 }
-input::-webkit-input-placeholder { 
+*::-webkit-input-placeholder { 
 	color: #48cbe8; 
 }
 .message{
@@ -58,13 +73,26 @@ input::-webkit-input-placeholder {
 	min-height: 111px;
 	box-sizing:border-box;
 	padding-left: 10px;
+	margin-bottom: 18px;
 }
-
-
-
-
-
-
+.capcha{
+	margin-bottom: 21px;
+}
+.capchahere{
+	width: 192px;
+	height: 79px;
+	box-sizing:border-box;
+	border: solid 1px  #48cbe8;
+	border-radius: 3px;
+	float: left;
+	text-align: center;
+	padding-top: 25px;
+	background-color: #fff;
+}
+.code{
+	float: right;
+	margin-top: 21px;
+}
 
 /*Button decoration*/
 .messbutton, .messbutton1{
@@ -103,3 +131,15 @@ box-shadow: 0 4px #687b8f;
 .messbutton1:focus{
     outline: none;
 }
+.messbut{
+	display: block;
+	padding-bottom: 45px;
+}
+
+.messbutton{
+	float: left;
+}
+.messbutton1{
+	float: right;
+}
+
