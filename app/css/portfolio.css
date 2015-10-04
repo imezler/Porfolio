@@ -40,6 +40,7 @@
 	border: solid 2px;
 	border-radius:3px;
 	color: #3ba8c0;
+	z-index: 1;
 }
 .add{
 	width: 183px;
@@ -60,3 +61,33 @@
 	margin-top: 30px;
 }
 /*-----------Допилить ховер эффект над проектами----------*/
+.effect{
+	background: rgba(76, 181, 232, 0.7);
+    z-index: 5;
+    position: absolute;
+    height: 130px;
+    width: 183px;
+    opacity: 0;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+
+}
+.linkup{
+	display: inline-block;
+	border: 2px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    font-family: "FiraSansLight";
+    margin-top: 50px;
+    padding: 0 5px;
+	font-size: 15px; 
+	text-decoration: none;  
+}
+.effect:hover{
+	opacity: 1;
+	border-radius: 3px;
+	cursor:pointer;
+}
