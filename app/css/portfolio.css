@@ -89,5 +89,10 @@
 .effect:hover{
 	opacity: 1;
 	border-radius: 3px;
+	
+}
+.linkup:hover{
+	background:#fff;
+	color: rgba(76, 181, 232, 0.7);
 	cursor:pointer;
 }
