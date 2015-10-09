@@ -43,6 +43,7 @@
 	z-index: 1;
 }
 .add{
+	cursor: pointer;
 	width: 183px;
 	height: 130px;
 	border:dashed 1px;

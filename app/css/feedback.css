@@ -63,6 +63,9 @@
 *::-webkit-input-placeholder { 
 	color: #48cbe8; 
 }
+.placeholder{
+	line-height: 40px; /* for IE8*/
+}
 .message{
 	border-radius: 3px;
 	border: solid 1px #48cbe8;

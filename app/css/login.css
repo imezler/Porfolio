@@ -51,6 +51,9 @@
 	padding-left: 20px;
 	color: #48cbe8;
 }
+.placeholder{
+	line-height: 60px; /* for IE8*/
+}
 input::-webkit-input-placeholder { 
 	color: #48cbe8; 
 }

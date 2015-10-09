@@ -1,23 +1,24 @@
 /*-----------Добавление нового проекта---------*/
 
 .addprojpop{
+	z-index: 999;
 	position: fixed;
 	top:0;
 	bottom: 0;
 	right: 0;
 	left: 0;
-	z-index: 98;
+	display: none;
 	background-color: rgba(0, 0, 0, 0.7);
 	cursor: pointer;
-	display: none;
 }
 .project{
-	z-index: 100;
+	z-index: 1000;
 	position: fixed;
 	top:0;
-	display: block;
 	width: 362px;
+	border-radius: 3px;
 	background: #eff3f7;
+	box-shadow; 0 0 10px rgba(0, 0, 0, 0.5);
 	display: none;
 }
 .popupadd{
@@ -57,7 +58,7 @@
 	margin-left: 12px;
 
 }
-.poperror{
+.fail{
 	display: none;
 	border: solid 1px #f97e76;
 	border-radius: 3px;
@@ -68,18 +69,52 @@
 	background-repeat: no-repeat;
 	background-position: 98% 10%;
 	padding-left: 9px;
-
 }
-.poperr{
+.fail1{
 	margin:0;
 	font-size: 25px;
 	font-weight: normal;
 }
-.poperr2{
+.fail2{
 	margin:0;
 	font-size: 15px;
 	font-weight: normal;
 	padding-bottom: 6px;
+}
+.successwrap{
+	margin-top: 15%;
+	display: none;
+	position: fixed;
+	box-sizing:border-box;
+	z-index: 1001;
+	width: 361px;
+	height: 103px;
+	background-color: #eff3f7;
+	border-radius: 3px;
+	padding-top: 18px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.success{
+	display: block;
+	width: 320px;
+	margin: 0 auto;
+	background-image: url(../img/close3.png);
+	background-repeat: no-repeat;
+	background-position: 98% 10%;
+	padding-left: 9px;
+	border-radius: 3px;
+	background-color: #b8e1ce;
+	font-family: "FiraSansBook";
+	color: #49bb7b;
+	border: solid 1px #49bb7b;
+}
+.success1, .success2{
+	font-size: 25px;
+	font-weight: normal;
+	margin: 0;
+}
+.success2{
+	font-size: 15px;
 }
 .popinp{
 	display: block;
@@ -91,6 +126,9 @@
 	box-sizing: border-box;
 	padding-left: 20px;
 	color: #48cbe8;
+}
+.placeholder{
+	line-height: 40px; /* for IE8*/
 }
 .imagination{
 	z-index: 2;
