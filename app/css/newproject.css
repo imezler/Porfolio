@@ -10,6 +10,8 @@
 	display: none;
 	background-color: rgba(0, 0, 0, 0.7);
 	cursor: pointer;
+/*затемнение в IE8*/	
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
 }
 .project{
 	z-index: 1000;
