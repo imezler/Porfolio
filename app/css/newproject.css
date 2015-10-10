@@ -154,6 +154,8 @@
 	background-image: url(../img/imgupload.png);
 	background-repeat: no-repeat;
 	background-position: right;
+	line-height: 40px;
+	background-color: #fff;
 }
 .poplabel{
 	font-family: "FiraSansBook";

@@ -19,6 +19,16 @@ $(document).ready(function() {
     	});
     });
 });
+//--------Вывод имени загружаемого файла в модалке------
+$('#imageup').on('change', function(){
+    var _this = $(this),
+        val = _this.val().slice(12),
+        fileNameField = $('.magic');
+        fileNameField.text(val);
+        if (val =="") {
+            fileNameField.text('Загрузите изображение')
+        };    
+});     
 
 //--------placeholder IE8------
 $('[placeholder]').parents('form').submit(function() {
