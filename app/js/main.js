@@ -57,14 +57,15 @@ $('[placeholder]').focus(function() {
 //--------Модульное программирование JS -------
 var myModule = (function (){
 
+    //Инициализирует модуль
     var initInside = function (){
         _setUpListners();
     };
-
+    //Прослушивает события
     var _setUpListners = function (){
-        $('.project').on('submit', _addProject); //Добавляем проект
+        $('.project').on('submit', _addProject);
     };
-
+    //Добавляет проект
     var _addProject = function (e) {
         console.log('добавление проекта');
         e.preventDefault();
@@ -72,34 +73,48 @@ var myModule = (function (){
         // Объявление переменных для отправки на сервер
         var form = $(this),
             url = 'add_project.php',
-            data = form.serialize();
+            ServerAnswer = _ajaxForm(form, url);
 
-        console.log(data);
-        //ajax Запрос на сервер
-        $.ajax({
-            url: url,
-            type: 'POST',
-            dataType: 'json',
-            data: data,
-        })
-        .done(function(answer) {
-            console.log("success");
-            if (answer.message === 'OK'){
-                form.find('success').text(answer.text);
+        ServerAnswer.done(function(answer) {
+            
+            var succexBox = form.find('коробочка успех'),
+                errorBox = form.find('коробочка фэйл');
+
+            if (answer.status === 'OK'){
+                errorBox.hide();
+                succexBox.text(answer.text).show; 
             }else{
-                form.find('fail').text(answer.text);    
+                succexBox.hide();
+                errorBox.text(answer.text).show;    
                 }
-             
         })
-        .fail(function() {
-            console.log("error");
-        })
-        .always(function() {
-            console.log("complete");
-        });
-        
     };
 
+
+    //-----------------Универсальная функция ajax--------------------
+    //Используется 
+    //@form - форма
+    //@url - адрес Php файла, к которому мы обращаемся
+    // 1.проверить форму
+    // 2.собрать данные из формы
+    // 3.вернуть ответ с сервера
+    var _ajaxForm = function (form, url){
+        //if (!valid) return false;
+        data = form.serialize();
+
+        var result = $.ajax({
+            url: url,
+            type: 'POST',
+            dataType: 'json', 
+            data: data,
+        }).fail( function(answer){
+            console.log('Проблемы в PHP');
+            form.find('коробочка с сообщением').text('На сервере произошла ошибка').show();
+        });
+        
+        return result;
+    };
+    //Возвращает публичные методы
     return{
         init: initInside
     };
