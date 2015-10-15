@@ -373,3 +373,14 @@ li.workitems{
 
 }
 
+/*--------------qtip2------------------*/
+.qtip-mystyle{
+	background-color: #f97e76;
+    border-color: #f97e76;
+    color: #fff;
+    font-size: 13px;
+}
+.empty_error{
+	background: #fdd5d2;
+    border-color: #f97e76;
+}

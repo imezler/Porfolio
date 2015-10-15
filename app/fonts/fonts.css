@@ -50,10 +50,10 @@
 }
 @font-face {
     font-family: 'FSLI';
-    src: url('firasans-lightitalic.eot');
-    src: url('firasans-lightitalic.eot?#iefix') format('embedded-opentype'),
-         url('firasans-lightitalic.woff') format('woff'),
-         url('firasans-lightitalic.ttf') format('truetype');
+    src: url('/fonts/firasans-lightitalic.eot');
+    src: url('/fonts/firasans-lightitalic.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/firasans-lightitalic.woff') format('woff'),
+         url('/fonts/firasans-lightitalic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

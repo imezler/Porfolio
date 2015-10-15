@@ -181,20 +181,22 @@
 					</div>
 					
 					<label class="poplabel">Название проекта</label>
-					<input type="text" placeholder="Введите название" class="popinp">
+					<input type="text" placeholder="Введите название" qtip-content="Вы не ввели название" class="popinp">
 					<label class="poplabel">Картинка проекта</label>
-					<div class="magic">Загрузите картинку</div>
-					<input name="popinp" type="file" value="" class="popinp imagination" id="imageup">
+					<div class="magic" qtip-content="Вы не выбрали изображение">Загрузите изображение</div>
+					<input name="popinp" type="file" value=""  class="popinp imagination" id="imageup">
 					<label class="poplabel">URL проекта</label>
-					<input type="text" placeholder="Добавьте ссылку" class="popinp">
+					<input type="text" placeholder="Добавьте ссылку" qtip-content="Вы не добавили ссылку" class="popinp">
 					<label class="poplabel">Описание</label>
-					<textarea placeholder="Пара слов о вашем проекте" class="poparea"></textarea>
+					<textarea placeholder="Пара слов о вашем проекте" qtip-content="Описание проекта обязательно"  class="poparea"></textarea>
 					<button class="buttonpop">Добавить</button>
 				</div>
 			</form>
 		</div>
-	<script scr="bower/qtip2/jquery.qtip.js"></script>
 	<script src="bower/jquery/jquery.js"></script>
-	<script src="js/main.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<script src="js/main.js"></script> 
+	<script src="js/add_project.js"></script>
+	<script src="js/validation.js"></script>
 </body>
 </html>

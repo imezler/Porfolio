@@ -9,17 +9,19 @@
 	<title>Portfolio</title>
 	<!--SEO -->
 	<meta name="description" content="my porfolio">    
-	<meta name="keywords" content="portfolio,job,resume,CV">    
+	<meta name="keywords" content="portfolio, job, resume, CV">    
 	<meta name="author" content="Ilya Metsler">
 	<!-- favicon.ico -->
 	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<!-- CSS --> 
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="fonts/fonts.css">
 	<link rel="stylesheet" href="css/portfolio.css">
 	<link rel="stylesheet" href="css/feedback.css">
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
 	<script src="bower/modernizer/modernizr.js"></script>
 </head>
 
@@ -83,20 +85,20 @@
 				<div class="messcont">
 					<div class="messwrap clearfix">
 						<div class="messwrap1"><label class="messname">Имя</label>
-						<input type="text" placeholder="Как к вам обращаться" class="messinp">
+						<input type="text" placeholder="Как к вам обращаться" class="messinp" qtip-content="Вы не ввели имя">
 						</div>
 
 						<div class="messwrap2"><label class="messname">Email</label>
-						<input type="text" placeholder="Куда мне писать" class="messinp">
+						<input type="text" placeholder="Куда мне писать" class="messinp" qtip-content="Вы не ввели email" qtip-position="right">
 						</div>
 					</div>
 					<label class="messname">Сообщение</label>	
-					<textarea placeholder="Кратко в чем суть" class="message"></textarea>
+					<textarea placeholder="Кратко в чем суть" class="message" qtip-content="Что вы от меня хотите?"></textarea>
 					
 					<div class="capcha clearfix">
 						<label class="messname">Введите код, указанный на картинке</label>
 						<div class="capchahere">Capcha is here</div>
-						<input type="text" class="code" placeholder="Введите код">
+						<input type="text" class="code" placeholder="Введите код" qtip-content="Вы не ввели код" qtip-position="right">
 					</div>
 					
 					<div class="messbut clearfix">
@@ -117,7 +119,9 @@
 			<div class="copyright">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
 		</div>
 	</footer>
+	
 	<script src="bower/jquery/jquery.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/validation.js"></script>
 	<script src="js/contact.js"></script>
