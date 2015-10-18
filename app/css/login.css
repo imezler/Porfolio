@@ -4,13 +4,13 @@
 }
 .window{
 	margin:0 auto;
-	padding:0;
 	height: 484px;
 	width: 590px;
 	border-radius: 3px;
 	background-color: #eff3f7;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-	margin-top: 120px;
+	vertical-align: middle;
+	margin-top: 12%;
 }
 .login{
 	height: 106px;

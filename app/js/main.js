@@ -22,27 +22,12 @@ $(document).ready(function() {
 });
 
 
-//--------placeholder IE8--------------------------------
-$('[placeholder]').parents('form').submit(function() {
-  $(this).find('[placeholder]').each(function() {
-    var input = $(this);
-    if (input.val() == input.attr('placeholder')) {
-      input.val('');
-    }
-  })
+//--------placeholder IE8-------------------------
+$(document).ready(function() {
+    if (!Modernizr.input.placeholder) {
+        $('input, textarea').placeholder();
+    };
 });
 
-$('[placeholder]').focus(function() {
-  var input = $(this);
-  if (input.val() == input.attr('placeholder')) {
-    input.val('');
-    input.removeClass('placeholder');
-  }
-}).blur(function() {
-  var input = $(this);
-  if (input.val() == '' || input.val() == input.attr('placeholder')) {
-    input.addClass('placeholder');
-    input.val(input.attr('placeholder'));
-  }
-}).blur();
+
 

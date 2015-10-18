@@ -3,11 +3,10 @@ var gulp = require ("gulp"),
 
 gulp.task('server', function () {
 	browserSync ({
-		proxy: "openserver/domains/portfolio/",
-			// port:9000,
-		 // server: {
-		 // 	baseDir: 'app'
-		 
+		port:9000,
+		server: {
+			baseDir: 'app'
+		}
 	});
 });
 

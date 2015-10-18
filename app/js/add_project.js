@@ -11,20 +11,22 @@ var myModule = (function (){
         $('#imageup').on('change', _chooseYourDestiny);
     };
 
-     var _chooseYourDestiny = function(){
-        var $this = $(this),
-        val = $this.val().slice(12),
+    var _chooseYourDestiny = function(){
+        var $input = $(this),
+        val = $input.val().slice(12),
         fileNameField = $('.magic');
         fileNameField.text(val);
         if (val !== ""){
-            $('.magic').removeClass('empty_error');
-            $('.magic').trigger('hideTooltip');
+            $('#imageup').removeClass('empty_error');
+            $('#imageup').siblings('.magic').removeClass('err');
+            $('#imageup').trigger('hideTooltip');
         };
     };
 
+
+
     //Добавляет проект
     var _addProject = function (e) {
-        console.log('добавление проекта');
         e.preventDefault();
 
         // Объявление переменных для отправки на сервер

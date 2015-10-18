@@ -10,7 +10,6 @@ var contact = (function () {
 	};
 
 	var _submitForm = function(e) {
-		console.log('Отправка запроса');
 		e.preventDefault();
 		
 		var form = $(this),
@@ -20,7 +19,6 @@ var contact = (function () {
 			//что-то будем делать с ответом сервера	
 	} 
 	var _ajaxForm = function(form, url){
-		console.log('ajax запрос с проверкой');
 		if (!validation.validateForm(form)) return false;
 		//если false, то код ниже не будет выполнен
 	};

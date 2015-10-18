@@ -12,7 +12,7 @@ var validation = (function () {
 
 	var _cleanForm = function(form) {
 		var form = $(this);
-		form.find('input, textarea, .magic').trigger('hideTooltip');
+		form.find('input, textarea').trigger('hideTooltip');
 		form.find('.empty_error').removeClass('empty_error');
 	};
 
@@ -61,7 +61,7 @@ var validation = (function () {
 
 	//Универсальная функция
 	var validateForm = function (form) { 
-		var elements = form.find('input, textarea, .magic').not('input[type="file"], input[type="hidden"]'),
+		var elements = form.find('input, textarea').not('input[type="hidden"]'),
 		 	valid = true;	
 	//Проходит по всем элементам формы	 	
 	$.each(elements, function(index, val){
@@ -71,6 +71,7 @@ var validation = (function () {
 
 		if (val.length === 0){
 			element.addClass('empty_error');
+			element.siblings('.magic').addClass('err');
 			_createQtip(element, pos);
 			valid = false;
 		}

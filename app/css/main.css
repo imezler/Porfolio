@@ -382,5 +382,5 @@ li.workitems{
 }
 .empty_error{
 	background: #fdd5d2;
-    border-color: #f97e76;
+    border-color: #f97e76 !important;
 }

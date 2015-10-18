@@ -32,7 +32,7 @@
 		<header>
 			<div class="header clearfix">
 				<div class="logo">
-					<a href="index2.html"><img src="img/logo.png" height="42" width="243" alt="Loftschool"></a>
+					<a href="index.html"><img src="img/logo.png" height="42" width="243" alt="Loftschool"></a>
 				</div>
 
 				<div class="social">
@@ -43,8 +43,6 @@
 				</div>
 			</div>
 		</header>
-		<!--<div class="lang"><a href="index2.html"><img src="img/eng.png" alt=""></a></div>
-		<div class="lang1"><a href="index.html"><img src="img/rus.png" alt=""></a></div>-->
 		<div class="main clearfix">
 		<div class="side">
 			<nav class="menu">
@@ -67,7 +65,7 @@
 					<a href="mailto:imetsler@gmail.com" class="contacts-items">imetsler@gmail.com</a>
 				</li>
 				<li class="contacts-list-inner tel">
-					<a href="tel:+79538953930" class="contacts-items">+79538953930</a>
+					<a href="callto:+79538953930" class="contacts-items">+79538953930</a>
 				</li>
 				<li class="contacts-list-inner skype">
 					<a href="skype:metsler999" class="contacts-items">metsler999</a>
@@ -180,21 +178,30 @@
 						<p class="fail2">Невозможно добавить проект.</p>
 					</div>
 					
-					<label class="poplabel">Название проекта</label>
-					<input type="text" placeholder="Введите название" qtip-content="Вы не ввели название" class="popinp">
-					<label class="poplabel">Картинка проекта</label>
-					<div class="magic" qtip-content="Вы не выбрали изображение">Загрузите изображение</div>
-					<input name="popinp" type="file" value=""  class="popinp imagination" id="imageup">
-					<label class="poplabel">URL проекта</label>
-					<input type="url" placeholder="Добавьте ссылку" qtip-content="Вы не добавили ссылку" class="popinp">
-					<label class="poplabel">Описание</label>
-					<textarea placeholder="Пара слов о вашем проекте" qtip-content="Описание проекта обязательно"  class="poparea"></textarea>
-					<button class="buttonpop">Добавить</button>
+					<label class="poplabel">
+						<p class="modal">Название проекта</p>
+						<input type="text" placeholder="Введите название" qtip-content="Вы не ввели название" class="popinp">
+					</label>
+					<label class="poplabel">
+						<p class="modal">Картинка проекта</p>
+						<input name="popinp" type="file" class="imagination" id="imageup" qtip-content="Вы не выбрали изображение">
+						<div class="magic">Загрузите изображение</div>	
+					</label>	
+					<label class="poplabel">
+						<p class="modal">URL проекта</p>
+						<input type="text" placeholder="Добавьте ссылку" qtip-content="Вы не добавили ссылку" class="popinp">
+					</label>
+					<label class="poplabel">
+						<p class="modal">Описание</p>
+						<textarea placeholder="Пара слов о вашем проекте" qtip-content="Описание проекта обязательно"  class="poparea"></textarea>
+					</label>
+					<button type="submit" class="buttonpop">Добавить</button>
 				</div>
 			</form>
 		</div>
 	<script src="bower/jquery/jquery.js"></script>
 	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
 	<script src="js/main.js"></script> 
 	<script src="js/add_project.js"></script>
 	<script src="js/validation.js"></script>
